@@ -3,6 +3,8 @@ require 'pry'
 
 def prime?(n)
   for i in 2..n
-    binding.pry
+    if n % 2 == 0 
+      binding.pry
+    end
   end
 end
