@@ -1,10 +1,6 @@
 require 'pry'
 
 
-def prime?(n)
-  for i in 2..n
-    if n % 2 == 0 
-      return true
-    end
-  end
+def prime(n)
+  (2..n/2).none?{|i| n % i == 0}
 end
