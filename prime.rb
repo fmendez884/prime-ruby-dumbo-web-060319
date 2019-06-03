@@ -2,11 +2,7 @@ require 'pry'
 
 
 def prime?(n)
-  for i in 2..n-1
-    binding.pry
-    if n % i == 0
-      return false 
-    else 
+  for i in 2..n
       return true
     end
   end
